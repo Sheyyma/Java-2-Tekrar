@@ -1,0 +1,17 @@
+package deneme;
+
+ class calisan {
+     public void isYap(double a){
+         System.out.println("calisan.isYap()");
+     }
+}
+class mudur extends calisan{
+     public void isYap (int a){//overloaded
+
+     }
+
+    public static void main(String[] args) {
+        mudur m= new mudur();
+        m.isYap(3.3);
+    }
+}
