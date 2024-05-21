@@ -1,0 +1,28 @@
+package deneme;
+
+public class kitap {
+    public int sayfaSayisiOgren(){
+        System.out.println("kitap - "+sayfaSayisiOgren());
+        return 440;
+    }
+
+    public double fiyatOgren(){
+        System.out.println("kitap- "+ fiyatOgren());
+        return 2500000;
+    }
+
+    public String YazarIsmiOgren(){
+        System.out.println("kitap- "+YazarIsmiOgren());
+        return "xy";
+
+    }
+}
+
+class roman extends kitap{
+    public static void main(String[] args) {
+        roman r= new roman();
+        int sayfasisi= r.sayfaSayisiOgren();
+        double fiyat= r.fiyatOgren();
+        String yazarAdi=r.YazarIsmiOgren();
+    }
+}
