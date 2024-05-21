@@ -1,0 +1,29 @@
+package deneme;
+
+class Insan{
+    public Insan(int par){
+        System.out.println("insan yapılandırıcısı"+ par);
+    }
+
+    class zekiInsan extends Insan{
+        public  zekiInsan(int par){
+            super(par+1);
+            System.out.println("zeki insan yapılandırıcısı"+ par);
+        }
+    }
+
+    class hacker extends zekiInsan{
+        public hacker (int par){
+            super(par+1);
+            System.out.println("hacker yapılandırıcısı"+ par);
+        }
+    }
+
+    public static void main(String[] args) {
+        hacker hck= new hacker(5);
+    }
+
+
+
+
+}
