@@ -1,0 +1,30 @@
+package deneme;
+
+public class kontrolMerkezi {
+    public static void checkUp(sporcu s){
+        s.calis();
+
+    }
+}
+class sporcu{
+    public void calis(){
+        System.out.println("sporcu.calis()");
+
+    }
+}
+class futbolcu extends sporcu{
+    public void calis(){ //overriding
+        System.out.println("futbolcu.calis()");
+    }
+}
+class main{
+    
+
+    public static void main(String[] args) {
+        sporcu s= new sporcu();
+        futbolcu f= new futbolcu();
+        kontrolMerkezi.checkUp(s);
+        kontrolMerkezi.checkUp(f);
+    }
+
+}
