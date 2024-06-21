@@ -1,0 +1,21 @@
+//5 öğrenciye ait ad soyad java notu numaraa tutuluyor
+
+import java.util.Scanner;
+
+class ogrenci {
+    public int java,no;
+    public String isim;
+}
+class AA{
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        ogrenci[]sinif= new ogrenci[5];
+        for(int i=0; i<5; i++){
+            sinif[i]=new ogrenci();
+            sinif[i].isim= input.next();
+            sinif[i].no= input.nextInt();
+            sinif[i].java= input.nextInt();
+        }
+
+    }
+}
